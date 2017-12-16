@@ -35,7 +35,7 @@ namespace SM
 
            
    
-                lblErrorMessage.Text = "Access denied";
+                //lblErrorMessage.Text = "Access denied";
             
         }
     }
