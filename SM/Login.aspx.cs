@@ -21,7 +21,7 @@ namespace SM
             SqlConnection con = new SqlConnection("Data Source=WINDOWS-5MOB6K6\\SQLEXPRESS;Initial Catalog=SMDB;Integrated Security=True");
             //Set query
             con.Open();
-            SqlCommand cmd = new SqlCommand("select * from UserLogin", con);
+            SqlCommand cmd = new SqlCommand("getUser", con);
             //Read data from table
             SqlDataReader rd = cmd.ExecuteReader();
 
@@ -36,7 +36,15 @@ namespace SM
            
    
                 lblErrorMessage.Text = "Access denied";
+            btnAddUser.Visible = true;
             
+        }
+
+        protected void btnAddUser_Click(object sender, EventArgs e)
+        {
+
+
+            Response.Redirect("Signup.aspx");
         }
     }
 }

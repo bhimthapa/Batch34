@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="SM.Login" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Signup.aspx.cs" Inherits="SM.Signup" %>
 
 <!DOCTYPE html>
 
@@ -10,8 +10,7 @@
     <form id="form1" runat="server">
         <div>
             <asp:Label ID="lblErrorMessage" BackColor="Red" runat="server" Text=""></asp:Label>
-            <asp:Button ID="btnAddUser" runat="server" Text="Signup"  Visible="false" OnClick="btnAddUser_Click"/>
-            <table>
+                 <table>
                 <tr>
                     <td>User Name</td>
                     <td>
@@ -24,13 +23,19 @@
                         <asp:TextBox ID="txtPassword" TextMode="Password" runat="server"></asp:TextBox>
                     </td>
                 </tr>
+
+                      <tr>
+                    <td>Re-Password</td>
+                    <td>
+                        <asp:TextBox ID="txtRePassword" TextMode="Password" runat="server"></asp:TextBox>
+                    </td>
+                </tr>
                  <tr>
                     <td colspan="2">
-                        <asp:Button ID="btnLogin" runat="server" Text="Login" OnClick="btnLogin_Click" />
+                        <asp:Button ID="btnLogin" runat="server" Text="Create" OnClick="btnLogin_Click"  />
                     </td>
                 </tr>
             </table>
-
 
         </div>
     </form>
