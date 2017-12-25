@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SMMaster.master.cs" Inherits="SM.SMMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Master</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="width: 900px; height: 200px; background-color: aqua;"></div>
+        <div style="width: 900px; height: 25px; background-color: firebrick;">
+        
+            <%--  <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>--%>
+            <table>
+                <tr>
+                    <td><asp:Button ID="btnHome" runat="server" Text="Home" OnClick="btnHome_Click" /></td>
+                    <td><asp:Button ID="btnAddItem" runat="server" Text="Add New" OnClick="btnAddItem_Click" /></td>
+                    <td><asp:Button ID="btnPurchase" runat="server" Text="Purchase" OnClick="btnPurchase_Click" /></td>
+                    <td><asp:Button ID="btnSales" runat="server" Text="Sales" OnClick="btnSales_Click" /></td>
+                    <td><asp:Button ID="btnStock" runat="server" Text="Stock" OnClick="btnStock_Click" /></td>
+
+                </tr>
+            </table>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+        </div>
+    </form>
+</body>
+</html>

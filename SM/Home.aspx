@@ -1,16 +1,9 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="SM.Home" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/SMMaster.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="SM.Home" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    
+</asp:Content>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-        <div>
-            <h1>Welcome to Home page</h1>
-        </div>
-    </form>
-</body>
-</html>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+        <h1>Welcome TO Home Page</h1>
+    
+</asp:Content>

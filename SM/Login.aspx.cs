@@ -46,5 +46,10 @@ namespace SM
 
             Response.Redirect("Signup.aspx");
         }
+
+        protected void btnDelete_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Delete.aspx");
+        }
     }
 }
