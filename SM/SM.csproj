@@ -70,6 +70,7 @@
     <Content Include="AddItems.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="Sales.aspx" />
+    <Content Include="script.sql" />
     <Content Include="SMMaster.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
